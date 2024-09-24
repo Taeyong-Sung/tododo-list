@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/todos/todo-index.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="page-header">
+  <h1>Todo List</h1>
+  <img src="{% static 'images/cool-todo.svg' %}" alt="A cool todo" />
+  <img src="{% static 'images/happy-todo.svg' %}" alt="A happy todo" />
+  <img src="{% static 'images/teacup-todo.svg' %}" alt="A todo in a teacup" />
+  <img src="{% static 'images/todo-in-box.svg' %}" alt="A todo in a box" />
+</section>
+
+<section class="card-container">
+  {% for todo in todos %}
+  <div class="card">
+    <div class="card-content">
+      <div class="card-img-container">
+        <img
+          src="{% static 'images/sk8r-boi-todo.svg' %}"
+          alt="A skater boy todo"
+        />
+      </div>
+      <h2 class="card-title">{{ todo.name }}</h2>
+      <p>A {{ todo.breed }} todo.</p>
+      <p><small>{{ todo.description }}</small></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
