@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
+from .models import Todo
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
 # Add the following import
@@ -17,11 +20,22 @@ def todo_index(request):
 def home(request):
   return render(request, 'home.html')
 
-class Todo:
-  def __init__(self, name, description):
-    self.name = name
-    self.description = description
+def todo_index(request):
+  todos = Todo.objects.all()
+  return render(request, 'todos/index.html', { 'todos': todos })
 
-todos = [
-  Todo('Kitchen', 'Clean Stove',),
-]
+def todo_detail(request, todo_id):
+  todo = Todo.objects.get(id=todo_id)
+  return render(request, 'todos/detail.html', { 'todo': todo })
+
+class TodoCreate(CreateView):
+  model = Todo
+  fields = '__all__'
+
+class TodoUpdate(UpdateView):
+  model = Todo
+  fields = ['description']
+
+class TodoDelete(DeleteView):
+  model = Todo
+  success_url = '/todos/'
