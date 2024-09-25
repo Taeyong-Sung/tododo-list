@@ -142,7 +142,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 LOGIN_REDIRECT_URL = 'todo-index'
 LOGOUT_REDIRECT_URL = 'home'
 LOGIN_URL = 'home'
