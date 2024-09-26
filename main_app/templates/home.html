@@ -6,16 +6,12 @@
 {% endblock %}
 
 {% block content %}
-{% comment %} 
 <section class="logo-container">
-  <div class="todo-container">
-    <img src="{% static 'images/splash.svg' %}" alt="The Cat Collector Cat" />
-  </div>
   <img
-    src="{% static 'images/logotype.svg' %}"
+    src="{% static 'images/todoss.webp' %}"
     alt="Text reads: Todo"
   />
-</section> {% endcomment %}
+</section>
 
 {% if not user.is_authenticated %}
   <section>
