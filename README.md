@@ -1,8 +1,10 @@
 # <center> **Todo List** </center>
 
+![image](https://github.com/user-attachments/assets/1e140e58-d54f-40d4-874c-f518da549a5b)
+
 
 > ## Description
-Todo List is an incredibly intuitive and accessible application designed to enhance productivity by simplifying task organization. Users can effortlessly create detailed lists of tasks, prioritize them to meet deadlines effectively, and easily update or remove completed items as they progress through their day, ensuring a seamless and efficient workflow.
+Todo List is an intuitive and accessible application designed to enhance productivity by simplifying task organization. Users can effortlessly create detailed lists of tasks, prioritize them to meet deadlines effectively, and easily update or remove completed items as they progress through their day, ensuring a seamless and efficient workflow.
 
 > ## Motivation
 Oftentimes, no matter how hard we try, important tasks slip our minds due to our forgetfulness. Fortunately, now there's a solution - welcome to todo-list, the revolutionary app designed to help you effortlessly manage and prioritize your daily to-dos, so you never miss a beat again!
