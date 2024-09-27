@@ -13,8 +13,8 @@ html {
   --background-color: background-color: #f3f3f3;
   background-color: #f3f3f3;
 background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23a795c2' fill-opacity='0.14' fill-rule='evenodd'/%3E%3C/svg%3E");
-  --card-bg: #999595; /* White background for cards */
-  --card-text-color: #000000; /* Black font color for cards */
+  --card-bg: #999595; 
+  --card-text-color: #000000; 
   --nav-bg: rgba(6, 126, 190, 0.7);
   --nav-bg-ff: rgba(104, 197, 248, .9);
   --borders: rgb(36, 116, 248) solid 2px;
@@ -44,12 +44,12 @@ body {
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif;
   min-height: 100vh;
-  background-color: var(--background-color); /* Apply bright background */
+  background-color: var(--background-color);
 }
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  background: var(--nav-bg-ff);
   border-bottom: var(--borders);
 }
 
@@ -164,26 +164,26 @@ nav li {
 
 /* Card Styles */
 .card {
-  background-color: var(--card-bg); /* White background */
-  color: var(--card-text-color); /* Black text */
-  box-shadow: var(--card-box-shadow); /* Subtle shadow */
-  border-radius: var(--card-border-radius); /* Rounded corners */
+  background-color: var(--card-bg);
+  color: var(--card-text-color);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
   padding: 20px;
   margin: 10px;
-  text-decoration: none; /* Remove font decoration */
+  text-decoration: none; 
 }
 
 .card a {
-  text-decoration: none; /* Ensure no underlining on links */
-  color: var(--card-text-color); /* Make sure the link text is black */
+  text-decoration: none; 
+  color: var(--card-text-color);
 }
 
 .card a:hover {
-  color: var(--link-hover-color); /* Optional: change color on hover */
+  color: var(--link-hover-color); 
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: var(--card-text-color); /* Set headings and paragraph text to black */
+  color: var(--card-text-color);
 }
 
 @media only screen and (min-width: 768px) {
